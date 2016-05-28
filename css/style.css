@@ -30,6 +30,7 @@ body {
 p {
     line-height: 1.5;
     margin: 30px 0;
+    font-family: 'Biacoenero Regular', 'Arial', sans-serif;
 }
 
 p a {
@@ -119,7 +120,7 @@ hr.small {
     }
     .navbar-custom .nav li a:hover,
     .navbar-custom .nav li a:focus {
-        color: rgba(16, 86, 133, 0.8);
+        color: #999;
     }
 }
 
@@ -152,14 +153,14 @@ hr.small {
     }
     .navbar-custom.is-fixed .navbar-brand:hover,
     .navbar-custom.is-fixed .navbar-brand:focus {
-        color: rgba(16, 86, 133, 0.8);
+        color: rgba(16, 86, 133, 0.1);
     }
     .navbar-custom.is-fixed .nav li a {
         color: #404040;
     }
     .navbar-custom.is-fixed .nav li a:hover,
     .navbar-custom.is-fixed .nav li a:focus {
-        color: rgba(16, 86, 133, 0.8);
+        color: rgba(16, 86, 133, 0.1);
     }
     .navbar-custom.is-visible {
         /* if the user changes the scrolling direction, we show the header */
@@ -176,7 +177,7 @@ hr.small {
     background-attachment: fixed;
     background-image: url('../img/pattern.png');
     margin-bottom: 50px;
-    background-color: #870c25;
+    background-color: #087489;
 }
 
 .intro-header-about {
@@ -429,8 +430,8 @@ form .row:first-child .floating-label-form-group {
 
 .btn-default:hover,
 .btn-default:focus {
-    background-color: #870c25;
-    border: 1px solid #870c25;
+    background-color: #087489;
+    border: 1px solid #087489;
     color: white;
 }
 
@@ -539,7 +540,7 @@ div .ias-trigger-next {
 .accordion-dark .ui-state-default {
     border: 1px solid #d3d3d3/*{borderColorDefault}*/
     ;
-    background: #333333;
+    background: #087489;
     color: #fff;
     font-weight: normal/*{fwDefault}*/
     ;
@@ -568,7 +569,6 @@ div .ias-trigger-next {
     background-color: #fff !important;
 }
 
-
 /*Tag cloud*/
 
 .cloud {}
@@ -579,3 +579,9 @@ div .ias-trigger-next {
 p.copyright a:hover {
     color: #373c73;
 }
+
+/*srl*/
+#srl{
+    text-decoration: underline;
+}
+

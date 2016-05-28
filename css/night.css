@@ -4,12 +4,29 @@
  * Licensed under Apache 2.0 (https://github.com/IronSummitMedia/startbootstrap/blob/gh-pages/LICENSE)
  */
 
-body {
-  font-family: 'Lora', 'Times New Roman', serif;
-  font-size: 20px;
-  color: #f1f1f1;
-  background-color: #222;
+@font-face {
+    font-family: 'Biacoenero Regular';
+    src: url('../fonts/biancoenero/regular.eot');
+    /* IE9 Compat Modes */
+    src: url('../fonts/biancoenero/regular.eot?#iefix') format('embedded-opentype'), url('../fonts/biancoenero/regular.woff') format('woff'), /* Pretty Modern Browsers */
+    url('../fonts/biancoenero/regular.ttf') format('truetype'), /* Safari, Android, iOS */
 }
+
+@font-face {
+    font-family: 'Biacoenero Bold';
+    src: url('../fonts/biancoenero/bold.eot');
+    /* IE9 Compat Modes */
+    src: url('../fonts/biancoenero/bold.eot?#iefix') format('embedded-opentype'), url('../fonts/biancoenero/bold.woff') format('woff'), /* Pretty Modern Browsers */
+    url('../fonts/biancoenero/bold.ttf') format('truetype'), /* Safari, Android, iOS */
+}
+
+body {
+    font-family: 'Biacoenero Regular', 'Arial', sans-serif;
+    font-size: 20px;
+    color: #f1f1f1;
+    background-color: #666;
+} 
+
 p {
   line-height: 1.5;
   margin: 30px 0;
@@ -31,7 +48,7 @@ a {
 }
 a:hover,
 a:focus {
-  color: #2574a9;
+  color: #870c25 ;
 }
 a img:hover,
 a img:focus {
@@ -227,7 +244,7 @@ hr.small {
 .post-preview > a:hover,
 .post-preview > a:focus {
   text-decoration: none;
-  color: #2574a9;
+  
 }
 .post-preview > a > .post-title {
   font-size: 30px;
@@ -240,7 +257,7 @@ hr.small {
   margin-bottom: 10px;
 }
 .post-preview > .post-meta {
-  color: #808080;
+  color: #eee;
   font-size: 18px;
   font-style: ;
   margin-top: 0;
@@ -411,4 +428,52 @@ img::-moz-selection {
 }
 body {
   webkit-tap-highlight-color: #870c25;
+}
+
+
+/*Ias trigger*/
+
+.ias-trigger-next a {
+    border: solid 2px #999;
+    color:#111;
+    border-radius: 5px;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    padding: 10px 15px;
+    text-transform: uppercase;
+}
+
+.ias-trigger-next a:hover {
+    border: solid 3px #eee;
+    color: #eee;
+    background-color: #111;
+    text-decoration: none;
+}
+
+/*Footer*/
+
+footer p.copyright{
+  color:#eee;
+}
+
+/*Misc*/
+
+blockquote{
+  color:#eee;
+}
+
+.text-muted{
+  color:#eee;
+}
+
+#accessibility{
+  background-color: #f1f1f1;
+  border-radius: 10px;
+}
+
+#usability{
+  background-color: #f1f1f1;
+  border-radius: 10px;
 }
