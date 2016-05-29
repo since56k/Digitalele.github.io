@@ -5,24 +5,21 @@
 
  */
 
-@font-face {
-    font-family: 'Biacoenero Regular';
-    src: url('../fonts/biancoenero/regular.eot');
-    /* IE9 Compat Modes */
-    src: url('../fonts/biancoenero/regular.eot?#iefix') format('embedded-opentype'), url('../fonts/biancoenero/regular.woff') format('woff'), /* Pretty Modern Browsers */
-    url('../fonts/biancoenero/regular.ttf') format('truetype'), /* Safari, Android, iOS */
+ @font-face {
+    font-family: "BiancoeneroRegular";
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/biancoenero/regular.ttf");
 }
-
 @font-face {
-    font-family: 'Biacoenero Bold';
-    src: url('../fonts/biancoenero/bold.eot');
-    /* IE9 Compat Modes */
-    src: url('../fonts/biancoenero/bold.eot?#iefix') format('embedded-opentype'), url('../fonts/biancoenero/bold.woff') format('woff'), /* Pretty Modern Browsers */
-    url('../fonts/biancoenero/bold.ttf') format('truetype'), /* Safari, Android, iOS */
+    font-family: "BiancoeneroBold";
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/biancoenero/bold.ttf");
 }
 
 body {
-    font-family: 'Biacoenero Regular', 'Arial', sans-serif;
+    font-family: 'BiancoeneroRegular', 'Arial', sans-serif;
     font-size: 20px;
     color: #404040;
 }
@@ -30,11 +27,15 @@ body {
 p {
     line-height: 1.5;
     margin: 30px 0;
-    font-family: 'Biacoenero Regular', 'Arial', sans-serif;
+    font-family: 'BiancoeneroRegular', 'Arial', sans-serif;
 }
 
 p a {
-    text-decoration: underline;
+    
+    color:#870c25;
+    font-family: BiancoeneroBold;
+}
+
 }
 
 h1,
@@ -54,6 +55,7 @@ a {
 a:hover,
 a:focus {
     color: #870c25;
+    text-decoration: none;
 }
 
 a img:hover,
@@ -309,7 +311,6 @@ hr.small {
 .post-preview > .post-meta > a:hover,
 .post-preview > .post-meta > a:focus {
     color: #870c25;
-    text-decoration: underline;
 }
 
 @media only screen and (min-width: 768px) {
@@ -319,6 +320,7 @@ hr.small {
 }
 
 .section-heading {
+    font-family: BiancoeneroBold;
     font-size: 36px;
     margin-top: 60px;
     font-weight: 700;
@@ -405,7 +407,7 @@ footer .theme {
 }
 
 .floating-label-form-group-with-focus label {
-    color: #870c25;
+    color: #087489;
 }
 
 form .row:first-child .floating-label-form-group {
@@ -583,5 +585,11 @@ p.copyright a:hover {
 /*srl*/
 #srl{
     text-decoration: underline;
+}
+
+/*Switcher*/
+.theme{
+    
+
 }
 
