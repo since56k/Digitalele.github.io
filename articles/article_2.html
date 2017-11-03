@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<!-- Basic -->
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Gabriele Dolfi - Blog</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	
+	<!-- Mobile Specific Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	
+	<!-- Load Fonts -->
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Mono:400,100,300italic,300,100italic,400italic,500,500italic,700,700italic&amp;subset=latin,cyrillic' rel='stylesheet'>
+	
+	<!-- CSS -->
+	<link rel="stylesheet" href="../assets/css/style.css" />
+	<link rel="stylesheet" href="../assets/css/layout.css" />
+	<link rel="stylesheet" href="../assets/css/magnific-popup.css" />
+	<link rel="stylesheet" href="../assets/css/animate.css" />
+	<link rel=stylesheet href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<!--[if lt IE 9]>
+	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+	<!-- Favicons -->
+	<link rel="shortcut icon" href="images/favicons/favicon.ico">
+	<link rel="apple-touch-icon" href="images/favicons/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/favicons/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/favicons/apple-touch-icon-114x114.png">
+	
+</head>
+
+<body>	
+	
+	<!-- Preloader -->
+	<div class="preloader">
+		<div class="centrize full-width">
+			<div class="vertical-center">
+				<div class="pre-inner">
+					<div class="load typing-load"><p>loading...</p></div>
+					<span class="typed-load"></span>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Container -->
+	<div class="container">
+		
+		<!-- Header -->
+		<header>
+			<div class="head-top">
+				<a href="#" class="menu-btn"><span></span></a>
+				<div class="top-menu">
+					<ul>
+						<li><a href="index.html" class="lnk">Resume</a></li>
+						<li><a href="index.html" class="lnk">Portfolio</a></li>
+						<li class="active"><a href="blog.html" class="btn">Blog</a></li>
+						<li><a href="index.html" class="link">Contacts</a></li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		
+		<div class="wrapper">
+		
+			<!-- Started -->
+			<div class="section started">
+				<div class="centrize full-width">
+					<div class="vertical-center">
+						<div class="started-content">
+							<div class="date">12 Gen 2017</div>
+							<div class="h-title blog_title">Save the Arctic Glacier and Amazon Forest</div>
+							<div class="h-subtitle typing-bread">
+								<p>Maybe it's too late to save them..</p>
+							</div>
+							<span class="typed-bread"></span>
+						</div>
+					</div>
+				</div>
+				<a href="#" class="mouse_btn"><span class="ion ion-mouse"></span></a>
+			</div>
+			
+			<!-- Blog -->
+			<div class="section blog">
+				<div class="content">
+					
+					<div class="single-post-text">
+						<blockquote>Is possible to save something that we are losing forever in millions of gigabytes of redundant database???</blockquote>
+						<p><img src="../assets/images/blog/arctic.jpg" alt="" /></p>
+						<p>As we well know in the last century the Arctic Circle is increasingly dissolving and deteriorating, due to the rising temperature. Some people think that this is due to the world industrialization that causes CO2 emissions in the air, and there are those who think that this is one of the natural cycles of the nature of our planet, but doesn't matter… maybe It's too late to save the Arctic Glaciers, but this bot aims to save some pieces in a database...</p>
+						
+						<p>Save The Arctic Glacier is a project bot created for the microblogging platform Twitter. Every 30 minutes the bot publishes an image of the Arctic Circle, which is retrieved in a database of more thousand screenshots, previously made on google maps thanks to some automated scripts, it also calculates the size of the square kilometers relative to the images map saved. To make it more interactive it thanks those who follow him and who mentions it in their publications or comments. After being loaded on twitter, pictures go automatically on a Tumblr account, that it provides to create an artistic collage.</p>
+						
+						<br>
+						<h2>Development details</h2>
+
+            <p>This project makes use of a variety of technologies to do their jobs. <br>
+            To create screenshots I used two python script found on the web:</p>
+            <p><a href="https://github.com/Digitalele/SaveArcticGlacier/blob/master/PythonMapGeo/Geometry.py">Geometry.py</a><br>
+            <a href="https://github.com/Digitalele/SaveArcticGlacier/blob/master/PythonMapGeo/GetGoImages.py">GetGoImages.py</a>
+            </p>
+
+            <p>The first script creates a .csv file with the Arctic Circle coordinates of longitude and latitude; 
+            the second script works with Google Maps API  that download all the images relating to the coordinates given before.</p>
+            <P>After that we have the scripts for the twitter bot created by me with node.js:</p>
+            
+            <p>This is the Bot that loads the images collected on twitter with the relatives hashtags and the size in square kilometers.</p>
+            <p><a href="https://github.com/Digitalele/SaveArcticGlacier/blob/master/SaveArcticGlacierBot/bot.js">Bot.js</a></p>
+            
+            <p>Then we have two scripts concerning the interaction, the first, thanks those who follow the account, and the second thanks those who mentions:</p>
+
+            <p><a href="https://github.com/Digitalele/SaveArcticGlacier/blob/master/SaveArcticGlacierBot/follow.js">Follow.js</a><br><a href="https://github.com/Digitalele/SaveArcticGlacier/blob/master/SaveArcticGlacierBot/tweet.js">Tweet.js</a></p>
+
+
+            <p>The node.js scripts for the bot are running on a Raspberry Pi.</p>
+
+            <p>To forward the images on Tumblr I used https://ifttt.com, a platform for the automation of social networks.</p>
+
+            <h3>Twitter Account</h3>
+            <p><a href="https://twitter.com/Save_Arctic_Ice">Save the Arctic Glacier</a></p>
+            <p><a href="https://twitter.com/Save_Amz_forest">Save the Amazon Forest</a></p>
+            <p><a href="https://github.com/Digitalele/SaveArcticGlacier">Code Repositories</a></p>
+
+					</div>
+					
+					
+					<div class="clear"></div>
+				</div>
+			</div>
+		
+		</div>
+		
+		<!-- Footer -->
+		<footer>
+			<div class="soc">
+				<a target="_blank" href="https://linkedin.com/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+				<a target="_blank" href="https://twitter.com/"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+				<a target="_blank" href="https://github.com/"><i class="fa fa-github" aria-hidden="true"></i></a>
+			</div>
+			<div class="copy">Gabriele Dolfi</div>
+			<div class="clr"></div>
+		</footer>
+		
+		<!-- Lines -->
+		<div class="line top"></div>
+		<div class="line bottom"></div>
+		<div class="line left"></div>
+		<div class="line right"></div>
+		
+	</div>
+	
+	<!-- jQuery Scripts -->
+  <script src="../assets/js/jquery.min.js"></script>
+
+	<script src="../assets/js/jquery.validate.js"></script>
+	<script src="../assets/js/typed.js"></script>
+	<script src="../assets/js/magnific-popup.js"></script>
+	<script src="../assets/js/masonry.pkgd.js"></script>
+	<script src="../assets/js/imagesloaded.pkgd.js"></script>
+	<script src="../assets/js/masonry-filter.js"></script>
+	
+	
+	<!-- Main Scripts -->
+	<script src="../assets/js/main.js"></script>
+	
+</body>
+</html>
