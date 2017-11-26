@@ -11,6 +11,8 @@ $(function () {
     $('.bottom').css('backgroundColor', randomColor);
     $('.left').css('backgroundColor', randomColor);
     $('.right').css('backgroundColor', randomColor);
+		
+    $('.multi-active').css('backgroundColor', randomColor);
 
     //$('.wrapper').css('background-image', 'url(' + imageUrl + ')');
     
@@ -157,14 +159,12 @@ $(function () {
 	/* Initialize masonry items */
 	var $container = $('.box-items');
 	
-	$container.imagesLoaded(function(){
 		$container.multipleFilterMasonry({
 			itemSelector: '.box-item',
 			filtersGroupSelector: '.filters',
 			percentPosition: true,
 			gutter: 0
 		});
-	});
 	
 	/* Initialize masonry filter */
 	$('.filters label').on('change', 'input[type="checkbox"]', function() {
