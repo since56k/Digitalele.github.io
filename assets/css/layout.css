@@ -479,7 +479,7 @@ header .head-top .top-menu ul li.active .btn{
     float: left;
     width: 36px;
     text-align: center;
-    font-size: 30px;
+    font-size: 38px;
     color: #999
 }
 @media (max-width: 400px) {
@@ -496,7 +496,7 @@ header .head-top .top-menu ul li.active .btn{
     font-weight: 500;
     font-size: 13px;
     color: #141414;
-    margin: 6px 0 0 46px
+    margin: 14px 0 0 46px
 }
 @media (max-width: 400px) {
     .service-items .service-item .name {
