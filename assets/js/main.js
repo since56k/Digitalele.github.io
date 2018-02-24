@@ -2,11 +2,17 @@ $(function () {
 	'use strict';
 	
 	$(window).unload(function() {});
+	
+	var randomColor = 'rgb(' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ')';
+	$('.top').css('backgroundColor', randomColor);
+    $('.bottom').css('backgroundColor', randomColor);
+    $('.left').css('backgroundColor', randomColor);
+    $('.right').css('backgroundColor', randomColor);	
+    $('.multi-active').css('backgroundColor', randomColor);
 
 	var timer = setInterval( function() {
     
     var randomColor = 'rgb(' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ')';
-    console.log(randomColor);
     $('.top').css('backgroundColor', randomColor);
     $('.bottom').css('backgroundColor', randomColor);
     $('.left').css('backgroundColor', randomColor);
@@ -39,6 +45,7 @@ $(function () {
 			/* Typed subtitle */
 			$('.typed-subtitle').typed({
 				stringsElement: $('.typing-subtitle'),
+				typeSpeed: 35,
 				loop: true
 			});
 			
