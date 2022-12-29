@@ -1,8 +1,0 @@
-User-agent: *
-Sitemap: http://sitemap.xml
-Disallow: /fonts/
-Disallow: /css/
-Disallow: /js/
-Disallow: /img/
-Disallow: /mail/
-Disallow: /2.html
